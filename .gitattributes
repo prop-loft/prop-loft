@@ -1,0 +1,3 @@
+# Store and check out text as LF on every platform, so scripts like
+# manage.py keep a working shebang on Windows-configured git too.
+* text=auto eol=lf
