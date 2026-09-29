@@ -10,6 +10,21 @@ The design started out under the name *Backstage*. When it came time to create t
 
 The new name is also deliberately broader than version 1. The design scopes costumes first, but the name is for where the project is going.
 
+## Running it locally
+
+You need Python 3.12 or newer.
+
+```sh
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env             # then set DJANGO_SECRET_KEY
+python manage.py migrate
+python manage.py runserver
+```
+
+Local development uses a SQLite file. Production uses PostgreSQL, selected by setting `DATABASE_URL`.
+
 ## Maintainers
 
 - Tom Stephens ([@dagorym](https://github.com/dagorym))
