@@ -2,7 +2,9 @@
 
 Prop Loft is a catalog for the things a theater production keeps between shows. It helps a wardrobe lead and a crew of volunteers find an item, see where it's stored, and know who has it checked out. Version 1 covers costumes. The goal is every item a production stores: costumes, props, and set pieces.
 
-**Status:** early. The design is in progress, and there's no working app yet.
+> **A teaching project.** Prop Loft is the worked example for BYU's CS 301R, *Founding an Open-Source Project*. It's built in the open the way the course asks students to build theirs. The theater and the evidence cited in its design documents are invented for teaching.
+
+**Status:** early. The [design](docs/design.md) is approved; the app lists items, and search is next.
 
 ## Why "Prop Loft" and not "Backstage"
 
