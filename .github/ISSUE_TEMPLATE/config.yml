@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a code of conduct problem
+    url: https://github.com/prop-loft/prop-loft/blob/main/CODE_OF_CONDUCT.md#reporting-an-issue
+    about: Conduct reports are private. Please don't file them as issues.
