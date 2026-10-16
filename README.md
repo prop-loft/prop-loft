@@ -3,6 +3,17 @@
 Prop Loft is a catalog for the things a theater production keeps between shows. It helps a wardrobe lead and a crew of volunteers find an item, see where it's stored, and know who has it checked out. Version 1 covers costumes. The goal is every item a production stores: costumes, props, and set pieces.
 
 > **A teaching project.** Prop Loft is the worked example for BYU's CS 301R, *Founding an Open-Source Project*. It's built in the open the way the course asks students to build theirs. The theater and the evidence cited in its design documents are invented for teaching.
+>
+> **Following along in the course?** This repository is built ahead of the class, so `main` shows where the project ends up. To see it as it stood at your point in the course, open the tag for your session: choose it from the branch menu above the file list, or run `git checkout <tag>` in a clone.
+>
+> | Sessions | Tag | What's new at that point |
+> |---|---|---|
+> | 11–12 | [`session-11`](https://github.com/prop-loft/prop-loft/tree/session-11) | The repository: README, LICENSE, `.gitignore` |
+> | 13 | [`session-13`](https://github.com/prop-loft/prop-loft/tree/session-13) | The approved design and a Django skeleton that lists items |
+> | 14–15 | [`session-14`](https://github.com/prop-loft/prop-loft/tree/session-14) | Git standards: [`docs/git-standards.md`](https://github.com/prop-loft/prop-loft/blob/session-14/docs/git-standards.md) |
+> | 16–19 | [`session-16`](https://github.com/prop-loft/prop-loft/tree/session-16) | The front door: contributing guide, code of conduct, issue and pull request templates, communication norms |
+>
+> Issues and labels live on GitHub, not in the repository, so the issue tracker always shows the present, not the tag's moment.
 
 **Status:** early. The [design](docs/design.md) is approved; the app lists items, and search is next.
 
