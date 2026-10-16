@@ -38,9 +38,15 @@ python manage.py runserver
 
 Local development uses a SQLite file. Production uses PostgreSQL, selected by setting `DATABASE_URL`.
 
+## Contributing
+
+Contributions are welcome, and you don't need to be a Django expert to make one. Start with [CONTRIBUTING.md](CONTRIBUTING.md): it says what to do first, and issues labeled [`good first issue`](https://github.com/prop-loft/prop-loft/labels/good%20first%20issue) are a good place to begin. Everyone taking part follows our [code of conduct](CODE_OF_CONDUCT.md).
+
 ## Maintainers
 
 - Tom Stephens ([@dagorym](https://github.com/dagorym))
+
+Issues and pull requests get a first response within a week. Where to ask what, and how decisions get made, are in our [communication norms](docs/communication-norms.md).
 
 ## License
 
