@@ -31,7 +31,8 @@ You need Python 3.12 or newer.
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env             # then set DJANGO_SECRET_KEY
+cp .env.example .env             # Windows cmd: copy .env.example .env
+                                 # then set DJANGO_SECRET_KEY
 python manage.py migrate
 python manage.py runserver
 ```
