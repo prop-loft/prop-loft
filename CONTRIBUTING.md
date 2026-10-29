@@ -5,7 +5,7 @@ Thanks for looking. Prop Loft is small and early, so a single contribution makes
 ## Your first contribution
 
 1. **Get oriented.** Read the [README](README.md), then skim the [design document](docs/design.md), at least the goals and non-goals. That's what the project is for and what it deliberately isn't.
-2. **Find something to work on.** Issues labeled [`good first issue`](https://github.com/prop-loft/prop-loft/labels/good%20first%20issue) are scoped for someone new to the code. If none are open, look for [`help wanted`](https://github.com/prop-loft/prop-loft/labels/help%20wanted), or tell us what you'd like to do in a new issue.
+2. **Find something to work on.** Issues labeled [`good first issue`](https://github.com/prop-loft/prop-loft/labels/good%20first%20issue) are scoped for someone new to the code. If none are open, look for [`help wanted`](https://github.com/prop-loft/prop-loft/labels/help%20wanted), or tell us what you'd like to do in a new issue. The [project board](https://github.com/prop-loft/prop-loft/projects) shows what's in progress, and the [roadmap](docs/roadmap.md) shows what's coming and where bigger contributions fit.
 3. **Say you're taking it.** Comment on the issue, so two people don't do the same work. If you stop, say that too; it's fine.
 4. **Set up the project** by following [Running it locally](README.md#running-it-locally) in the README. If any step fails, that's a bug in our instructions: file it.
 5. **Make the change and open a pull request.** Opening a draft early to ask "am I on the right track?" is welcome.

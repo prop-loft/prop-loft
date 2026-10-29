@@ -11,11 +11,12 @@ Prop Loft is a catalog for the things a theater production keeps between shows. 
 > | 11–12 | [`session-11`](https://github.com/prop-loft/prop-loft/tree/session-11) | The repository: README, LICENSE, `.gitignore` |
 > | 13 | [`session-13`](https://github.com/prop-loft/prop-loft/tree/session-13) | The approved design and a Django skeleton that lists items |
 > | 14–15 | [`session-14`](https://github.com/prop-loft/prop-loft/tree/session-14) | Git standards: [`docs/git-standards.md`](https://github.com/prop-loft/prop-loft/blob/session-14/docs/git-standards.md) |
-> | 16–19 | [`session-16`](https://github.com/prop-loft/prop-loft/tree/session-16) | The front door: contributing guide, code of conduct, issue and pull request templates, communication norms |
+> | 16 | [`session-16`](https://github.com/prop-loft/prop-loft/tree/session-16) | The front door: contributing guide, code of conduct, issue and pull request templates, communication norms |
+> | 17–19 | [`session-17`](https://github.com/prop-loft/prop-loft/tree/session-17) | The plan: a task form, the [roadmap](https://github.com/prop-loft/prop-loft/blob/session-17/docs/roadmap.md), and on GitHub, epics, milestones, and a project board |
 >
 > Issues and labels live on GitHub, not in the repository, so the issue tracker always shows the present, not the tag's moment.
 
-**Status:** early. The [design](docs/design.md) is approved; the app lists items, and search is next.
+**Status:** early. The [design](docs/design.md) is approved; the app lists items, and search is next. What's coming, and where you can help, is in the [roadmap](docs/roadmap.md); what's in progress is on the [project board](https://github.com/prop-loft/prop-loft/projects).
 
 ## Why "Prop Loft" and not "Backstage"
 
