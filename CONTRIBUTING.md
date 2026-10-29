@@ -14,6 +14,7 @@ Thanks for looking. Prop Loft is small and early, so a single contribution makes
 
 - **Report a bug** with the [bug report form](https://github.com/prop-loft/prop-loft/issues/new?template=bug_report.yml). Steps to reproduce, and what you expected versus what happened, are what make a report fixable.
 - **Suggest a feature** with the [feature request form](https://github.com/prop-loft/prop-loft/issues/new?template=feature_request.yml). Tell us the problem and who has it, even if you have no idea how to solve it.
+- **Plan work** with the [task form](https://github.com/prop-loft/prop-loft/issues/new?template=task.yml), once it's decided: the goal, where it comes from, and the acceptance criteria that say when it's done. Most tasks are written by a maintainer, often by turning an accepted feature request into one.
 - **Improve the docs.** If something here confused you, you're the best person to fix it, because you know exactly where it went wrong.
 - **Review a pull request.** Reading someone else's change and asking a good question is a contribution too.
 
@@ -39,6 +40,7 @@ You'll get a first review within one week. Reviews ask questions and suggest cha
 | `bug` | Something doesn't work as it should. |
 | `enhancement` | A new feature or an improvement. |
 | `documentation` | Docs only. |
+| `epic` | A piece of user-visible value too big for one pull request. Its sub-issues are the work; it closes when they do. |
 | `good first issue` | Scoped for someone new to the code, with a pointer to where to start. |
 | `help wanted` | The maintainer would welcome someone taking this. |
 | `question` | A question, not a change. |

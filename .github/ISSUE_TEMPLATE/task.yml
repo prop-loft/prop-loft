@@ -1,0 +1,40 @@
+name: Task
+description: Planned work, written so someone can pick it up and know when it's done.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for work that's already decided: a piece of an epic, a chore, a doc to write. If you're reporting something broken or asking for something new, use the bug report or feature request form instead; a maintainer turns those into tasks when they're accepted.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: One sentence. What's true for a user (or a contributor) when this is done?
+      placeholder: A volunteer can see who has an item checked out and when it's due back.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Links, not a retelling. The design section this comes from, the epic it belongs to, and the request it answers, if there is one.
+      placeholder: |
+        Design §4, Checkout. Part of #NN (epic). Needs #NN first.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: A checklist a reviewer can mark true or false when the pull request is ready. Include the tests. Every change also meets our [definition of done](https://github.com/prop-loft/prop-loft/blob/main/docs/git-standards.md#definition-of-done); don't repeat it here.
+      placeholder: |
+        - [ ] The item list shows "Out" and the due date for each checked-out item.
+        - [ ] The detail page shows the actor and the show.
+        - [ ] Tests cover an item that's in and one that's out.
+    validations:
+      required: true
+  - type: textarea
+    id: start
+    attributes:
+      label: Where to start (optional)
+      description: For a newcomer. Which file, which function to imitate, which test to copy.
