@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prop Loft — {{ item.name }}</title>
+</head>
+<body>
+  <main>
+    <p><a href="{% url 'catalog:item_list' %}">Back to catalog</a></p>
+    <h1>{{ item.name }}</h1>
+    <dl>
+      <dt>Name</dt>
+      <dd>{{ item.name }}</dd>
+      <dt>Category</dt>
+      <dd>{{ item.get_category_display }}</dd>
+      <dt>Size</dt>
+      <dd>{{ item.size_label|default:"—" }}</dd>
+      <dt>Condition</dt>
+      <dd>{{ item.get_condition_display }}</dd>
+      <dt>Bin</dt>
+      <dd>{{ item.bin }}</dd>
+    </dl>
+  </main>
+</body>
+</html>
