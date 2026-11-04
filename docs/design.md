@@ -7,7 +7,7 @@
 | **Authors** | A. Reyes, J. Okafor |
 | **Reviewers** | M. Tanaka (design-review partner) |
 | **Status** | Approved |
-| **Last updated** | Week 7 |
+| **Last updated** | Week 9 |
 | **Links** | [README](../README.md) · [issue tracker](https://github.com/prop-loft/prop-loft/issues) |
 
 ## Revision history
@@ -17,6 +17,7 @@
 | Week 6, Mon | A. Reyes | Skeleton from the in-class session |
 | Week 6, Wed | J. Okafor | Diagrams from the workshop; data model; tech choices |
 | Week 7 | A. Reyes, J. Okafor | Revised after design review: specified the Checkout component; named the network assumption and traced the failure case; argued the single-tenant decision; cut the column dump, the code listing, and the pinned versions; removed the email notifier the MVP never included; reordered the plan into vertical slices. Renamed the project from Backstage to Prop Loft, because that name belongs to Spotify's developer portal. |
+| Week 9 | T. Stephens | Sized the first milestone against the maintainer's hours: it didn't fit with HTMX, so the MVP uses plain forms. Added the decision to §6; updated §4's Web UI row and the HTMX risk in §7. |
 
 ---
 
@@ -59,7 +60,7 @@ Actors never touch the system directly: the volunteer checks items out *to* them
 
 | Component | Responsibility | Talks to | Interface (rough) |
 |---|---|---|---|
-| **Web UI** | Server-rendered pages for search, item detail, add item, check-out, and return. Downscales photos in the browser before upload. Keeps form input on a failed save. | Catalog, Checkout | HTML forms; HTMX partial updates |
+| **Web UI** | Server-rendered pages for search, item detail, add item, check-out, and return. Downscales photos in the browser before upload. Keeps form input on a failed save. | Catalog, Checkout | HTML forms, full-page reloads (HTMX after the MVP; see §6) |
 | **Catalog** | Owns items, categories, bins, and photos. Search by name, category, and size. | Database, Image store | Django views and models |
 | **Checkout** | Owns checkout records. Enforces **at most one open checkout per item**. Records returns. An item is **overdue** when its due date has passed with no return. | Database | Check-out and return form posts; an overdue list for the wardrobe lead |
 | **Image store** | Saves and serves photos. | Local disk | A storage interface, so object storage can replace the disk later |
@@ -133,16 +134,24 @@ Local development uses SQLite so the app runs without a database server; the con
 - **Evidence:** the upload spike — full-resolution uploads had a 71 s median with 3 of 10 failures on a throttled connection; downscaled uploads had a 48 s median with none.
 - **What would change our mind:** nothing short of the theater getting better wifi.
 
+### Decision: plain forms for the MVP, HTMX later
+
+- **Chosen:** server-rendered HTML forms with full-page reloads for every MVP page.
+- **Alternative considered:** HTMX partial updates, this document's original choice.
+- **Why the chosen option wins, given our goals:** the first milestone has to work by the progress demo, and it didn't fit. Sized against the maintainer's hours (about 10 a week, 20 for the milestone), it came to 21, and the check-out form alone was a week's work with HTMX, because HTMX is new to us (§7). With plain forms it's about half that, and the milestone comes to 18, which leaves room for review. Nothing in the MVP's goals needs a partial update: a volunteer who checks out an item and sees the page reload has still checked it out.
+- **Evidence:** the milestone sizing in Week 9, recorded on the [project board](https://github.com/prop-loft/prop-loft/projects). This is a schedule decision, not a measured one about HTMX itself.
+- **What would change our mind:** if full-page reloads are too slow on the shop's wifi during the strike-night trial, HTMX comes back, starting with the check-out and return forms.
+
 ### Other choices
 
-Django (the current long-term-support release), HTMX for partial page updates, Pillow for image handling, gunicorn, on a small Ubuntu LTS server. Exact versions live in [`requirements.txt`](../requirements.txt), not here, so this document doesn't go stale with every upgrade.
+Django (the current long-term-support release), Pillow for image handling, gunicorn, on a small Ubuntu LTS server. Exact versions live in [`requirements.txt`](../requirements.txt), not here, so this document doesn't go stale with every upgrade.
 
 ## 7. Risks and open questions
 
 | Risk or question | Why it matters | Owner | How we'll find out, and by when |
 |---|---|---|---|
 | HEIC photos from iPhones don't render | Half the volunteers use iPhones; the core feature silently breaks | J. Okafor | Test on a borrowed iPhone — milestone 3 |
-| HTMX is new to both of us | Could cost days | A. Reyes | Four-hour learning box; fall back to plain forms |
+| HTMX is new to both of us | Could cost days | A. Reyes | Fallback taken in Week 9: plain forms for the MVP (§6). Revisit after the strike-night trial. |
 | Volunteers keep using the paper notebook | The catalog goes stale | A. Reyes | Co-design the add-item form with the wardrobe lead before building it |
 
 ## 8. Implementation plan

@@ -12,7 +12,8 @@ Prop Loft is a catalog for the things a theater production keeps between shows. 
 > | 13 | [`session-13`](https://github.com/prop-loft/prop-loft/tree/session-13) | The approved design and a Django skeleton that lists items |
 > | 14–15 | [`session-14`](https://github.com/prop-loft/prop-loft/tree/session-14) | Git standards: [`docs/git-standards.md`](https://github.com/prop-loft/prop-loft/blob/session-14/docs/git-standards.md) |
 > | 16 | [`session-16`](https://github.com/prop-loft/prop-loft/tree/session-16) | The front door: contributing guide, code of conduct, issue and pull request templates, communication norms |
-> | 17–19 | [`session-17`](https://github.com/prop-loft/prop-loft/tree/session-17) | The plan: a task form, the [roadmap](https://github.com/prop-loft/prop-loft/blob/session-17/docs/roadmap.md), and on GitHub, epics, milestones, and a project board |
+> | 17 | [`session-17`](https://github.com/prop-loft/prop-loft/tree/session-17) | The plan: a task form, the [roadmap](https://github.com/prop-loft/prop-loft/blob/session-17/docs/roadmap.md), and on GitHub, epics, milestones, and a project board |
+> | 18–19 | [`session-18`](https://github.com/prop-loft/prop-loft/tree/session-18) | The plan, cut to fit: sizing the first milestone moved the MVP to plain forms ([design §6](https://github.com/prop-loft/prop-loft/blob/session-18/docs/design.md#decision-plain-forms-for-the-mvp-htmx-later)); on GitHub, sizes and the slice |
 >
 > Issues and labels live on GitHub, not in the repository, so the issue tracker always shows the present, not the tag's moment.
 
