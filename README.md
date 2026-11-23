@@ -14,11 +14,12 @@ Prop Loft is a catalog for the things a theater production keeps between shows. 
 > | 16 | [`session-16`](https://github.com/prop-loft/prop-loft/tree/session-16) | The front door: contributing guide, code of conduct, issue and pull request templates, communication norms |
 > | 17 | [`session-17`](https://github.com/prop-loft/prop-loft/tree/session-17) | The plan: a task form, the [roadmap](https://github.com/prop-loft/prop-loft/blob/session-17/docs/roadmap.md), and on GitHub, epics, milestones, and a project board |
 > | 18–19 | [`session-18`](https://github.com/prop-loft/prop-loft/tree/session-18) | The plan, cut to fit: sizing the first milestone moved the MVP to plain forms ([design §6](https://github.com/prop-loft/prop-loft/blob/session-18/docs/design.md#decision-plain-forms-for-the-mvp-htmx-later)); on GitHub, sizes and the slice |
-> | 20 on | [`session-20`](https://github.com/prop-loft/prop-loft/tree/session-20) | The setup guide: [`docs/setup.md`](https://github.com/prop-loft/prop-loft/blob/session-20/docs/setup.md) |
+> | 20–22 | [`session-20`](https://github.com/prop-loft/prop-loft/tree/session-20) | The setup guide: [`docs/setup.md`](https://github.com/prop-loft/prop-loft/blob/session-20/docs/setup.md) |
+> | 23 on | [`session-23`](https://github.com/prop-loft/prop-loft/tree/session-23) | What's known to be broken: [`docs/known-issues.md`](https://github.com/prop-loft/prop-loft/blob/session-23/docs/known-issues.md) |
 >
 > Issues and labels live on GitHub, not in the repository, so the issue tracker always shows the present, not the tag's moment.
 
-**Status:** early. The [design](docs/design.md) is approved; the app lists items, and search is next. What's coming, and where you can help, is in the [roadmap](docs/roadmap.md); what's in progress is on the [project board](https://github.com/prop-loft/prop-loft/projects).
+**Status:** early. The [design](docs/design.md) is approved; the app lists items, and search is next. What's coming, and where you can help, is in the [roadmap](docs/roadmap.md); what's in progress is on the [project board](https://github.com/prop-loft/prop-loft/projects). What doesn't work yet, and what was cut on purpose, is in [known issues](docs/known-issues.md).
 
 ## Why "Prop Loft" and not "Backstage"
 
